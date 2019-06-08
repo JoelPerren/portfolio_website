@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,300i,500" rel="stylesheet">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>Joel Perren | Portfolio</title>
+</head>
+<body>
+  <div id="wrapper">
+
+    <header>
+      <h1 class="__main">
+        Joel Perren
+      </h1>
+      <h1 class="__sub">
+        GIS Graduate & Transport Planner
+      </h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="active" href="">Portfolio</a>
+        </li>
+        <li>
+          <a href="cv.html">Curriculum Vitae</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="section group">
+      <div class="col span_12_of_12">
+        <p>
+          On this page you can find several of the projects which I undertook during my masters degree, covering a wide rage of topics including spatial and demographic analysis, GIS-related coding projects, and web-GIS development. There are also examples of GIS tools and workflows which I have developed at Fore Consulting.
+        </p>
+      </div>
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/llti.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Investigating the relationship between rates of limiting long-term illness and proximity to motorways
+          </h2>
+          <p>
+            In this project, I investigated whether rates of limiting long-term illness varied between census wards in Merseyside based on the proximity to motorways and data from the 2001 census.
+          </p>
+          <p>
+            To achieve this, I created a 5km buffer of the motorways running through Merseyside and then utilised a simple area-based interpolation to estimate the populations within and outside the buffer.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/limiting-long-term-illness.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/lca.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Comparing land classification by the British Land Capability Assessment to a Multi-Criteria Evaluation
+          </h2>
+          <p>
+            In this project, I compared the difference in results between two methods of land classification: the British land capability assessment (LCA), and a Multi-Criteria Evaluation (MCE).
+          </p>
+          <p>
+            To achieve this, I had to accurately implement the LCA and then devise a suitable MCE to compare it against. As part of this MCE I undertook a pairwise comparison between the different factors considered and implemented the analytical hierarchy process (AHP).
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/lca-vs-mce.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/qsm.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            A comparison of spatial analytic techniques to identify burglary hotspots in Leeds
+          </h2>
+          <p>
+            In this project, I explored the ways in which crime mapping techniques can be used to highlight the geographies of burglary and considered which mapping techniques provide the most utility for identifying crime hotspots.
+          </p>
+          <p>
+            This involved implementing several different crime mapping techniques including Gi* statistics, kernel density estimation, and the Geographical Analysis Machine.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/crime-mapping.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/blueplaques.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Google Maps API: Mapping the Blue Plaques of Leeds
+          </h2>
+          <p>
+            This project involved creating an online map showing the locations of Blue Plaques in Leeds. Built with the Google Maps API, the data is stored in JSON format with British National Grid coordinates before being converted into the correct coordinate reference system and being plotted onto the map. The Marker Cluster plugin is utilised to cluster points together at small scales.
+          </p>
+          <p>
+            As well as showing the locations of the plaques, the map also displays additional information for each plaque in an info window including the plaques message, sponsor, and date of placement.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/webgis1/Leeds_Blue_Plaques.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/webgis.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Leaflet API: Visualising data on an online map
+          </h2>
+          <p>
+            This project explores the difference methods of data visualisation which can be utilised to present a large data set in an online map. Using the Leaflet JavaScript library, it allows for the visualisation of 1,675 recorded cases of criminal damage or arson which occurred in Northumbria in February, 2017.
+          </p>
+          <p>
+            The data can be viewed as raw points, clusters of points, as a choropleth map, or as a heatmap. Accompanying each method of data visualisation is a brief commentary discussing the utility and limitation of each method.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/webgis3/index.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/java1.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Fallout Tracker &mdash; a Java program to simulate the fallout of particles from a bomb
+          </h2>
+          <p>
+            This project was the final project for the introduction to Java module during my master's degree. It is a basic program to simulate the fallout of particles from a bomb within an abstract environment according to a set of user-defined probabilities.
+          </p>
+          <p>
+            Prior to this module I had never coded a program before and, while a basic program overall, this project (for which I received a mark of 98/100) demonstrates my ability to quickly learn complex new skills.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/fallout-tracker.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/java2.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Projection Peruser &mdash; a Java program to compare how map projections distort the world
+          </h2>
+          <p>
+            This project was the final project for the Advanced Java module during my master's degree. It is a program which allows the user to compare how different map projections distort the world in different ways. It works by re-projecting a shapefile to a number of different coordinate reference systems. It also includes a grid and a set of Tissot's Intricacies to better demonstrate the distortion.
+          </p>
+          <p>
+            The program was coded in Java utilising the GeoTools library. In order to code the program I first had to independently learn GeoTools through its (less than ideal) documentation as GeoTools was not taught in the module.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/projection-peruser.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+    </main>
+
+    <footer>
+      Joel Perren | 2018
+    </footer>
+  </div> <!-- end of wrapper -->
+</body>
+</html>
