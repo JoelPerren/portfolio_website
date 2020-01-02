@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-  <title>Joel Perren · Portfolio</title>
+  <title>Joel Perren | Portfolio</title>
 </head>
 <body>
   <div id="wrapper">
@@ -49,31 +49,31 @@
           </h3>
           <ul>
             <li>
-              Vector geoprocessing and analysis
+              Advanced QGIS knowledge, including network analysis
             </li>
             <li>
-              Area-based areal interpolation
+              Extracting and processing data from OpenStreetMap
             </li>
             <li>
-              Joining census data with relevant boundaries
+              Initiative to identify a problem and develop a solution
             </li>
           </ul>
         </div>
         <div class="col span_9_of_12">
           <h2>
-            Investigating the relationship between rates of limiting long-term illness and proximity to motorways
+            Isochrone Generation Tool
           </h2>
           <p>
-            In this project, I investigated whether rates of limiting long-term illness varied between census wards in Merseyside based on the proximity to moroways and data from the 2001 census.
+            I developed a tool to automate the creation of walking and cycling isochrones using QGIS, OpenStreetMap data, and the GRASS vector network analysis toolkit. Previously, isochrones were created using Microsoft Publisher on the basis of manual measurements taken on Google Maps. By developing a GIS-based solution to this task I improved the quality and presentation of the output maps and significantly decreased the time taken to produce them.
           </p>
           <p>
-            To achieve this, I created a 5km buffer of the motorways running through Merseyside and then utilised a simple area-based interpolation to estimate the populations within and outside the buffer.
+            To create the tool, I first had to extract a network of walkable and cyclable roads from OpenStreetMap in a multi-stage process. First, I downloaded all of the data for Great Britain and then processed it to extract all of the walkable roads using osm2po, a Java program which outputs a SQL file for PostGIS. I then converted the data into a shapefile.
           </p>
           <p>
-            One issue with this methodology is that it assumes a homogenous distribution of population within each census ward which is unlikely to be the case. This assignment did not require a more sophisticated interpolation technique, however for my dissertation project I utilised binary dasymetric interpolation to address a similar problem. More information on that project will be added to this website shortly.
+            Using the QGIS Graphical Model builder, I then automated a workflow to generate isochrones from a given origin point. The GRASS vector network analysis toolkit is utilised to generate isolines which are then further processed to produce aesthetically pleasing polygon isochrones.
           </p>
           <p>
-            There was found to be a small 1% increase in the proportion of the population suffering from a LLTI within the motorway buffer when compared to those people living outside of the buffer. No statistical significance testing was required within the scope of the assessment and with such a small difference no definitive conclusion was reached.
+            This GIS-based method is significantly faster than the previous manual method and also produces more pleasant looking figures. QGIS is now used throughout the company for all figure creation tasks.
           </p>
           <p>
             <span class="bold-orange">&#171;</span>
@@ -87,15 +87,16 @@
         <div class="col span_9_of_12">
           <div class="section group">
             <div class="col span_6_of_12">
-              <a target="_top" href="../images/portfolio/GEOG5510-assessment-1/output1.png">
-                <img class="portfolio-output" src="../images/portfolio/GEOG5510-assessment-1/output1.png" />
+              <a target="_top" href="../images/portfolio/Isochrones/workflow.png">
+                <img class="portfolio-output" src="../images/portfolio/Isochrones/workflow.png" />
               </a>
             </div>
             <div class="col span_6_of_12">
-              <a target="_top" href="../images/portfolio/GEOG5510-assessment-1/output2.png">
-                <img class="portfolio-output" src="../images/portfolio/GEOG5510-assessment-1/output2.png" />
+              <a target="_top" href="../images/portfolio/Isochrones/figure.png">
+                <img class="portfolio-output" src="../images/portfolio/Isochrones/figure.png" />
               </a>
             </div>
+            
           </div>
         </div>
       </div>

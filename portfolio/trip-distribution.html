@@ -49,31 +49,34 @@
           </h3>
           <ul>
             <li>
-              Vector geoprocessing and analysis
+              HTML, CSS, and JavaScript
             </li>
             <li>
-              Area-based areal interpolation
+              Handling of asyncronous API calls
             </li>
             <li>
-              Joining census data with relevant boundaries
+              Initiative to identify a problem and develop a solution
             </li>
           </ul>
         </div>
         <div class="col span_9_of_12">
           <h2>
-            Investigating the relationship between rates of limiting long-term illness and proximity to motorways
+            Trip Distribution Program
           </h2>
           <p>
-            In this project, I investigated whether rates of limiting long-term illness varied between census wards in Merseyside based on the proximity to moroways and data from the 2001 census.
+            A common task I encountered at Fore Consulting was estimating the distribution of vehicle trips from development sites. When I joined the company this processes was undertaken manually and involved running several hundred manual direction queries in Google Maps to determine the likely routes people might take between the development site and their places of work or vice versa.
           </p>
           <p>
-            To achieve this, I created a 5km buffer of the motorways running through Merseyside and then utilised a simple area-based interpolation to estimate the populations within and outside the buffer.
+            I developed a program to automate this process in the form of a locally hosted website. Users input the location of the development site by clicking on the map and input all the required destinations via an input box which accepts all the common census areas (LSOAs, MSOAs, and census merged local authority districts). When the program is run it sends asynchronous direction requests to Google Maps via an API for each origin-destination pair and utilises an exponential back off to avoid breaching Google’s Terms of Service.
           </p>
           <p>
-            One issue with this methodology is that it assumes a homogenous distribution of population within each census ward which is unlikely to be the case. This assignment did not require a more sophisticated interpolation technique, however for my dissertation project I utilised binary dasymetric interpolation to address a similar problem. More information on that project will be added to this website shortly.
+            When all the direction requests are completed, the program outputs a GeoJSON file which can be loaded into a desktop GIS program or a CSV containing the travel time and distance between each OD pair which is used to create gravity models.
           </p>
           <p>
-            There was found to be a small 1% increase in the proportion of the population suffering from a LLTI within the motorway buffer when compared to those people living outside of the buffer. No statistical significance testing was required within the scope of the assessment and with such a small difference no definitive conclusion was reached.
+            In total this program has reduced the time taken to estimate the distribution of trips from a development site from several hours – sometimes over a day for large sites – to 10 minutes. It is also significantly more accurate. The program is now used across the company for all tasks requiring the distribution of trips.
+          </p>
+          <p>
+            The code for the program is available on my GitHub page and can be founder <a href="https://github.com/JoelPerren/Fore-TripDistribution">here.
           </p>
           <p>
             <span class="bold-orange">&#171;</span>
@@ -86,16 +89,12 @@
         <div class="col span_3_of_12"></div>
         <div class="col span_9_of_12">
           <div class="section group">
-            <div class="col span_6_of_12">
-              <a target="_top" href="../images/portfolio/GEOG5510-assessment-1/output1.png">
-                <img class="portfolio-output" src="../images/portfolio/GEOG5510-assessment-1/output1.png" />
+            <div class="col span_12_of_12">
+              <a target="_top" href="../images/portfolio/Trip_Distribution/tripdist.png">
+                <img class="portfolio-output" src="../images/portfolio/Trip_Distribution/tripdist.png" />
               </a>
             </div>
-            <div class="col span_6_of_12">
-              <a target="_top" href="../images/portfolio/GEOG5510-assessment-1/output2.png">
-                <img class="portfolio-output" src="../images/portfolio/GEOG5510-assessment-1/output2.png" />
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <title>Joel Perren | Portfolio</title>
+  <title>Joel Perren · Portfolio</title>
 </head>
 <body>
   <div id="wrapper">
@@ -44,9 +44,84 @@
     <main class="section group">
       <div class="col span_12_of_12">
         <p>
-          On this page you can find several of the projects which I undertook during my masters degree, covering a wide rage of topics including spatial and demographic analysis, GIS-related coding projects, and web-GIS development. There are also examples of GIS tools and workflows which I have developed at Fore Consulting.
+          On this page you can find numerous projects which I have undertaken throughout my career and Masters degree, covering a wide rage of topics including microsimulation modelling, political, spatial, and demographic analysis, GIS-related coding projects, and web-GIS development.
         </p>
       </div>
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/bus-timetables.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            A tool to parse TransXChange bus timetables and import them into microsimulation models
+          </h2>
+          <p>
+            I developed a tool to import bus routes and timetables into the Aimsun microsimulation software package using data provided in the Traveline National Dataset. The bus timetable data is first converted from an XML format into CSV files which are then processed to generate bus routes and daily timetable information within Aimsun.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/bus-timetables.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/isochrones.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Isochrone Generation Tool
+          </h2>
+          <p>
+            I developed a tool to automate the creation of walking and cycling isochrones using QGIS, OpenStreetMap data, and the GRASS vector network analysis toolkit. Previously, isochrones were created using Microsoft Publisher on the basis of manual measurements taken on Google Maps. By developing a GIS-based solution to this task I improved the quality and presentation of the output maps and significantly decreased the time taken to produce them.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/isochrones.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/tripdistribution.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Trip Distribution Tool
+          </h2>
+          <p>
+            A common task I encountered at Fore Consulting was estimating the distribution of vehicle trips from development sites. When I joined the company this processes was undertaken manually and involved running several hundred manual direction queries in Google Maps to determine the likely routes people might take between the development site and their places of work or vice versa.
+          </p>
+          <p>
+            I developed a program using the Google Maps API to automate this process.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/trip-distribution.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
+
+      <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
+        <div class="col span_3_of_12 thumbnail">
+          <img class="--thumbnail" src="images/portfolio/thumbnails/dissertation.png" />
+        </div>
+        <div class="col span_9_of_12">
+          <h2>
+            Masters dissertation: The Electoral Implications of the 2018 Boundary Review
+          </h2>
+          <p>
+            For my Masters Dissertation, I analysed the likely impact that the initial proposals of the 2018 Westminster parliamentary boundary review would have had upon the results of the 2015 and 2017 general elections as well as the level of electoral bias present in each election. Ultimately, it sought to examine the boundary review would disproportionately benefit one party over another.
+          </p>
+          <p>
+            <span class="bold-orange">&#187;</span>
+            <a class="text__link" href="portfolio/dissertation.html">Read More</a>
+          </p>
+        </div>
+      </div> <!--End of Portfolio Item-->
 
       <div class="section group portfolio-item"> <!--Start of Portfolio Item-->
         <div class="col span_3_of_12 thumbnail">
@@ -197,7 +272,7 @@
     </main>
 
     <footer>
-      Joel Perren | 2018
+      Joel Perren · <script>document.write(new Date().getFullYear())</script>
     </footer>
   </div> <!-- end of wrapper -->
 </body>
