@@ -1,0 +1,137 @@
+/*
+ * Colours:
+ * Text dark:          #221e22
+ * Hightlight orange:  #f9a03f
+ * Highlight blue:     #33658a
+ * Soft gray:          #f2f2f2
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,300i,500);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+  color: #221e22;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ----------------------- */
+/* Header Component Styles */
+/* ----------------------- */
+
+header {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 0.25em 0;
+  font-size: 3.6rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 0 0;
+  font-size: 2.0rem;
+  font-weight: 300;
+  /* font-style: italic; */
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin: 2em 0 2em 0;
+}
+
+nav ul, nav li {
+  display: inline-block;
+  margin: 0 0 0 0;
+  padding: 0 2px 0 2px;
+
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em 0.5em 1em;
+  margin: 0 0.1em 0 0.1em;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  color: #221e22;
+}
+
+nav a:hover {
+  border-color: #33658a;
+}
+
+nav a.active {
+  border-color: #f9a03f;
+}
+
+/* ----------- */
+/* Home Styles */
+/* ----------- */
+
+.portrait {
+  height: 227px;
+  width: 171px;
+  border: 0px solid #33658a;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.home-portrait {
+  height: 250px;
+  width: 171px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  padding: 0 2.5em 0 0;
+}
+
+/* ----------- */
+/* Text Styles */
+/* ----------- */
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: .25px;
+  margin-top: 0;
+  margin-bottom: 8;  
+}
+
+
+/* ----------------------- */
+/* Footer Component Styles */
+/* ----------------------- */
+
+footer {
+  margin: 2em 0 2em 0;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: right;
+ }
