@@ -7,7 +7,7 @@ const Contact = () => {
 
     return (
         <main>
-            <h2>Get in <span className="orange">Contact</span></h2>
+            <h2>Get in <span className="accent1">Contact</span></h2>
             <p>Send me an email at joel.perren at gmail.com</p>
             <p>
                 I'm also on

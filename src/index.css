@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
 
+:root {
+  --colour-bg-main: #202040;
+  --colour-bg-dark: #151530;
+  --colour-main: #FFEFF8;
+  --colour-secondary: #897793;
+  --colour-accent1: #FFBD69;
+  --colour-accent2: #FF6363;
+}
+
 html {
   overflow-y: scroll;
-  background-color: #202020;
-  color: #EAE4D8;
+  background-color: var(--colour-bg-main);
+  color: var(--colour-main);
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
-  width: 95%;
   max-width: 800px;
   margin: auto;
+  padding: 0 30px 0 30px;
 }
 
 /* Header */
@@ -18,10 +27,10 @@ html {
 @keyframes unsticky-navbar {
   from {padding: 20px 0 20px 0;}
   to {padding: 40px 0 0 0;}
-  from {background-color: #101010;}
-  to {background-color: #202020;}
-  from {box-shadow: 0 0px 20px #101010;}
-  to {box-shadow: 0 0 0 #202020;}
+  from {background-color: var(--colour-bg-dark)}
+  to {background-color: var(--colour-bg-main)}
+  from {box-shadow: 0 0px 20px var(--colour-bg-dark);}
+  to {box-shadow: 0 0 0 var(--colour-bg-main);}
 }
 
 nav {
@@ -41,19 +50,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px 0 30px;
 }
 
 .logo-and-name a {
   display: flex;
-  color: #EAE4D8;
+  color: var(--colour-main);
   text-decoration: none;
 }
 
 .logo-and-name a:hover {
-  text-shadow : 0 0 80px #EAE4D8;
+  text-shadow : 0 0 80px var(--colour-main);
 }
 
 .logo {
+  flex: 0 0 auto;
   padding: 0 20px 0 0;
 }
 
@@ -75,38 +86,39 @@ h1 {
 }
 
 .nav-item {
+  flex: 0 0 auto;
   text-decoration: none;
   padding: 10px 0 0 20px;
 }
 
 .nav-item a {
-  color: #736d5f;
+  color: var(--colour-secondary);
   text-decoration: none;
 }
 
 .nav-item a:hover {
-  color: #EAE4D8;
-  text-shadow : 0 0 40px #EAE4D8;
+  color: var(--colour-main);
+  text-shadow : 0 0 40px var(--colour-main);
 }
 
 .nav-item a.active {
-  color: #EAE4D8;
-  text-shadow : 0 0 80px #EAE4D8;
+  color: var(--colour-main);
+  text-shadow : 0 0 80px var(--colour-main);
 }
 
 @keyframes sticky-navbar {
   from {padding: 40px 0 0 0;}
   to {padding: 20px 0 20px 0;}
-  from {background-color: #202020;}
-  to {background-color: #101010;}
-  from {box-shadow: 0 0 0 #202020;}
-  to {box-shadow: 0 0px 20px #101010;}
+  from {background-color: var(--colour-bg-main);}
+  to {background-color: var(--colour-bg-dark);}
+  from {box-shadow: 0 0 0 var(--colour-bg-main);}
+  to {box-shadow: 0 0px 20px var(--colour-bg-dark);}
 }
 
 .sticky {
   padding: 20px 0 20px 0;
-  background-color: #101010;
-  box-shadow: 0 0px 20px #101010;
+  background-color: var(--colour-bg-dark);
+  box-shadow: 0 0px 20px var(--colour-bg-dark);
   animation-name: sticky-navbar;
   animation-duration: 0.3s;
 }
@@ -127,7 +139,7 @@ h2 {
 }
 
 .portrait {
-  padding: 0 40px 0 40px;
+  padding: 0 80px 0 80px;
 }
 
 p {
@@ -145,8 +157,12 @@ p.reduced-margin {
   font-weight: bolder;
 }
 
-.orange {
-  color: #E99A00;
+.accent1 {
+  color: var(--colour-accent1);
+}
+
+.accent2 {
+  color: var(--colour-accent2);
 }
 
 /* Portfolio  */
@@ -179,12 +195,12 @@ h3 {
 }
 
 .inline-link a {
-  color: #EAE4D8;
+  color: var(--colour-main);
   text-decoration: none;
 }
 
 .inline-link a:hover {
-  text-shadow : 0 0 40px #EAE4D8;
+  text-shadow : 0 0 40px var(--colour-main);
 }
 
 /* Portfolio Item  */
@@ -207,7 +223,7 @@ h3 {
 }
 
 .button-link:hover {
-  text-shadow : 0 0 40px #EAE4D8;
+  text-shadow : 0 0 40px var(--colour-main);
 }
 
 .article-image-container {
@@ -217,7 +233,6 @@ h3 {
 }
 
 .article-image {
-  /* max-height: 200px; */
   max-width: 360px;
   margin: 0 20px 20px 0;
   border-radius: 20px;
@@ -240,7 +255,7 @@ h3 {
   height: 15px;
   padding: 5px;
   border-radius: 20px;
-  background-color: #E99A00;
+  background-color: var(--colour-accent2);
 }
 
 .last-updated-icon {
@@ -292,8 +307,45 @@ footer {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 12px;
   text-align: right;
-  border-top: 1px solid #EAE4D8;
+  border-top: 1px solid var(--colour-secondary);
   padding: 10px 0 20px 0;
-  color: #EAE4D8;
-  opacity: 20%;
+  color: var(--colour-secondary);
+}
+
+/* Responsive CSS */
+
+@media (max-width: 860px) {
+
+  .portrait {
+    padding: 0 40px 0 40px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  
+  .portrait {
+    display: none;
+  }
+
+  .logo-and-name {
+    display: none;
+  }
+
+  .nav-container, .nav-menu {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .nav-item {
+    padding: 0 10px 0 10px;
+  }
+
+  main {
+    margin: 120px 0 0 0;
+  }
+
+  .portfolio-thumbnail {
+    display: none;
+  }
 }

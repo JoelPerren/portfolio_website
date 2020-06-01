@@ -11,7 +11,7 @@ const Home = () => {
         <main>
             <div className="hero">
                 <div>
-                    <h2>Hey there, I’m <span className="orange">Joel</span></h2>
+                    <h2>Hey there, I’m <span className="accent1">Joel</span></h2>
                     <p>I am a trainee software engineer at Ordnance Survey, learning all I can about full stack development. I built this website to showcase my work and also as a fun project to develop my skills with React – I like to learn by doing!</p>
                 </div>
                 <div className="home-portrait">

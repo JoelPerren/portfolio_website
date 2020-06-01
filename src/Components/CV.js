@@ -11,7 +11,7 @@ const CV = () => {
 
     return (
         <main>
-            <h2 className="cv-heading">Take a look at my <span className="orange">CV</span></h2>
+            <h2 className="cv-heading">Take a look at my <span className="accent1">CV</span></h2>
             <div className="widget-container" title="Last updated">
                 <div className="last-updated-widget">
                     <img src={lastUpdated} alt="" className="last-updated-icon"></img>

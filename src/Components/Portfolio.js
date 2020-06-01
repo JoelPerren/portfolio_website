@@ -12,7 +12,7 @@ const Portfolio = ({items}) => {
 
     return (
         <main>
-            <h2>Here’s my <span className="orange">Portfolio</span></h2>
+            <h2>Here’s my <span className="accent1">Portfolio</span></h2>
             <p>On this page you can find a collection projects which I have completed throughout my career and Masters degree. These projects cover a range of topics, including: software development, microsimulation modelling, and political, spatial, and demographic analysis.</p>
             {items.map( (item, index) => 
                 <PortfolioItem 

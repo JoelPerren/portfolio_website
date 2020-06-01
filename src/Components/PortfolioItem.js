@@ -18,7 +18,7 @@ const PortfolioItem = ({
                 <h3>{title}</h3>
                 <p className="reduced-margin">{summaryText}</p>
                 <p className="inline-link bold">
-                    <span className="orange">» </span>
+                    <span className="accent1">» </span>
                     <Link 
                         to={{
                             pathname: `${path}/${articlePath}`,

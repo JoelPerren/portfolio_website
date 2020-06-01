@@ -30,7 +30,7 @@ const Article = () => {
                     <p key={index} dangerouslySetInnerHTML={ { __html: para } }></p>
                 )}
                 <p className="inline-link bold">
-                    <span className="orange">«</span>
+                    <span className="accent1">«</span>
                     <button className="button-link smaller" onClick={history.goBack}>Back</button>
                 </p>
                 <div className="article-image-container">
