@@ -7,10 +7,8 @@ const Article = () => {
     const article = location.state.article;
     const images = article.images.map((name, index) => {
         return (
-            // NOTE: Test this works in production. Consider adding modal popup.
-            <a target="_top" href={`//../Images/${name}.png`}>
-                <img key={index} className="article-image" alt="" src={require(`../Images/${name}.png`)} />
-            </a>
+            // NOTE: Consider adding modal popup.
+            <img key={index} className="article-image" alt="" src={require(`../Images/${name}.png`)} />
         )
     });
 
