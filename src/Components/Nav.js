@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../Images/logo.png'
+import logo from '../Images/logo-x2.png'
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
