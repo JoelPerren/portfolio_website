@@ -89,7 +89,7 @@ export const PortfolioArticles = [
         articleText: [
             "This project explored the different methods of data visualisation which can be utilised to present a large data set in an online map. Using the Leaflet JavaScript library, it allows for the visualisation of 1,675 recorded cases of criminal damage or arson which occurred in Northumbria in February, 2017.",
             "The data can be viewed as raw points, clusters of points, as a choropleth map, or as a heatmap. Accompanying each method of data visualisation is a brief commentary discussing the utility and limitation of each method.",
-            "This project can be viewed <span class=\"inline-link bold\"><a href='//joelperren.co.uk/portfolio/webgis3/index.html'>here</a></span>."
+            "This project can be viewed <span class=\"inline-link bold\"><a href='//joelperren.github.io/dataviz/index.html'>here</a></span>."
         ],
         skills: [
             "Leaflet API.",
@@ -110,7 +110,7 @@ export const PortfolioArticles = [
         articleText: [
             "I created an online map showing the locations of Blue Plaques in Leeds with the Google Maps API. The data is stored in JSON format with British National Grid coordinates before being converted into the correct coordinate reference system and being plotted onto the map. The Marker Cluster plugin is utilised to cluster points together at small scales.",
             "As well as showing the locations of the plaques, the map also displays additional information for each plaque in an info window including the plaques message, sponsor, and date of placement.",
-            "This project can be viewed <span class=\"inline-link bold\"><a href='//joelperren.co.uk/portfolio/webgis1/Leeds_Blue_Plaques.html'>here</a></span>."
+            "This project can be viewed <span class=\"inline-link bold\"><a href='//joelperren.github.io/blueplaques/Leeds_Blue_Plaques.html'>here</a></span>."
         ],
         skills: [
             "Google Maps API.",
